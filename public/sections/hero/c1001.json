@@ -1,0 +1,66 @@
+{
+  "id": "c1001",
+  "type": "hero",
+  "content": [
+    {
+      "type": "container",
+      "className": "hero-container",
+      "style": {
+        "backgroundImage": "url('/images/hero-bg.jpg')",
+        "backgroundSize": "cover",
+        "backgroundPosition": "center",
+        "minHeight": "600px",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "color": "#ffffff",
+        "textAlign": "center",
+        "padding": "2rem"
+      },
+      "children": [
+        {
+          "type": "div",
+          "className": "hero-content",
+          "style": {
+            "maxWidth": "800px",
+            "backgroundColor": "rgba(0, 0, 0, 0.6)",
+            "padding": "2rem",
+            "borderRadius": "8px"
+          },
+          "children": [
+            {
+              "type": "h1",
+              "content": "Bienvenido a Nuestra Agencia Creativa",
+              "style": {
+                "fontSize": "3rem",
+                "marginBottom": "1rem"
+              }
+            },
+            {
+              "type": "p",
+              "content": "Transformamos ideas en experiencias digitales memorables. Nuestro equipo de expertos está listo para llevar tu marca al siguiente nivel.",
+              "style": {
+                "fontSize": "1.2rem",
+                "marginBottom": "2rem"
+              }
+            },
+            {
+              "type": "button",
+              "content": "Contáctanos",
+              "style": {
+                "backgroundColor": "#ff6b6b",
+                "color": "white",
+                "border": "none",
+                "padding": "0.75rem 1.5rem",
+                "fontSize": "1.1rem",
+                "borderRadius": "4px",
+                "cursor": "pointer",
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

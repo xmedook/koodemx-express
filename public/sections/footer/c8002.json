@@ -1,0 +1,186 @@
+{
+  "id": "c8002",
+  "type": "footer",
+  "content": [
+    {
+      "type": "footer",
+      "className": "footer-minimal",
+      "style": {
+        "backgroundColor": "#f8f9fa",
+        "padding": "3rem 2rem",
+        "color": "#495057"
+      },
+      "children": [
+        {
+          "type": "div",
+          "className": "container",
+          "style": {
+            "maxWidth": "1200px",
+            "margin": "0 auto"
+          },
+          "children": [
+            {
+              "type": "div",
+              "className": "footer-content",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "textAlign": "center"
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "className": "footer-logo",
+                  "style": {
+                    "marginBottom": "2rem"
+                  },
+                  "children": [
+                    {
+                      "type": "h2",
+                      "content": "AgenciaCreativa",
+                      "style": {
+                        "fontSize": "1.8rem",
+                        "fontWeight": "bold",
+                        "color": "#333"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "className": "footer-links",
+                  "style": {
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "gap": "2rem",
+                    "marginBottom": "2rem",
+                    "flexWrap": "wrap"
+                  },
+                  "children": [
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "Inicio",
+                      "style": {
+                        "color": "#495057",
+                        "textDecoration": "none",
+                        "transition": "color 0.3s ease"
+                      }
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "Servicios",
+                      "style": {
+                        "color": "#495057",
+                        "textDecoration": "none",
+                        "transition": "color 0.3s ease"
+                      }
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "Proyectos",
+                      "style": {
+                        "color": "#495057",
+                        "textDecoration": "none",
+                        "transition": "color 0.3s ease"
+                      }
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "Sobre Nosotros",
+                      "style": {
+                        "color": "#495057",
+                        "textDecoration": "none",
+                        "transition": "color 0.3s ease"
+                      }
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "Contacto",
+                      "style": {
+                        "color": "#495057",
+                        "textDecoration": "none",
+                        "transition": "color 0.3s ease"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "className": "social-icons",
+                  "style": {
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "gap": "1.5rem",
+                    "marginBottom": "2rem"
+                  },
+                  "children": [
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "style": {
+                        "color": "#495057",
+                        "fontSize": "1.5rem",
+                        "transition": "color 0.3s ease"
+                      },
+                      "content": "📱"
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "style": {
+                        "color": "#495057",
+                        "fontSize": "1.5rem",
+                        "transition": "color 0.3s ease"
+                      },
+                      "content": "💻"
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "style": {
+                        "color": "#495057",
+                        "fontSize": "1.5rem",
+                        "transition": "color 0.3s ease"
+                      },
+                      "content": "📧"
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "style": {
+                        "color": "#495057",
+                        "fontSize": "1.5rem",
+                        "transition": "color 0.3s ease"
+                      },
+                      "content": "📷"
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "className": "copyright",
+                  "style": {
+                    "color": "#868e96",
+                    "fontSize": "0.9rem"
+                  },
+                  "children": [
+                    {
+                      "type": "p",
+                      "content": "© 2025 AgenciaCreativa. Todos los derechos reservados."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

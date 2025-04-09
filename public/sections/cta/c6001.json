@@ -1,0 +1,64 @@
+{
+  "id": "c6001",
+  "type": "cta",
+  "content": [
+    {
+      "type": "section",
+      "className": "cta-section",
+      "style": {
+        "padding": "5rem 2rem",
+        "backgroundColor": "#4a6cf7",
+        "color": "#ffffff",
+        "textAlign": "center"
+      },
+      "children": [
+        {
+          "type": "div",
+          "className": "container",
+          "style": {
+            "maxWidth": "800px",
+            "margin": "0 auto"
+          },
+          "children": [
+            {
+              "type": "h2",
+              "className": "cta-title",
+              "content": "¿Listo para transformar tu presencia digital?",
+              "style": {
+                "fontSize": "2.5rem",
+                "marginBottom": "1.5rem"
+              }
+            },
+            {
+              "type": "p",
+              "className": "cta-description",
+              "content": "Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos de negocio con soluciones digitales a medida.",
+              "style": {
+                "fontSize": "1.2rem",
+                "marginBottom": "2.5rem",
+                "lineHeight": "1.6"
+              }
+            },
+            {
+              "type": "button",
+              "className": "cta-button",
+              "content": "Solicitar una consulta gratuita",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "color": "#4a6cf7",
+                "border": "none",
+                "padding": "1rem 2rem",
+                "fontSize": "1.1rem",
+                "borderRadius": "4px",
+                "cursor": "pointer",
+                "fontWeight": "bold",
+                "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                "transition": "transform 0.3s ease, box-shadow 0.3s ease"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "id": "c2001",
+  "type": "services",
+  "content": [
+    {
+      "type": "section",
+      "className": "services-section",
+      "style": {
+        "padding": "4rem 2rem",
+        "backgroundColor": "#f8f9fa"
+      },
+      "children": [
+        {
+          "type": "div",
+          "className": "container",
+          "style": {
+            "maxWidth": "1200px",
+            "margin": "0 auto"
+          },
+          "children": [
+            {
+              "type": "h2",
+              "className": "section-title",
+              "content": "Nuestros Servicios",
+              "style": {
+                "textAlign": "center",
+                "marginBottom": "3rem",
+                "fontSize": "2.5rem",
+                "color": "#333"
+              }
+            },
+            {
+              "type": "div",
+              "className": "services-grid",
+              "style": {
+                "display": "grid",
+                "gridTemplateColumns": "repeat(auto-fill, minmax(300px, 1fr))",
+                "gap": "2rem"
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "className": "service-card",
+                  "style": {
+                    "textAlign": "center",
+                    "padding": "2rem",
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    "transition": "transform 0.3s ease"
+                  },
+                  "children": [
+                    {
+                      "type": "div",
+                      "className": "service-icon",
+                      "style": {
+                        "fontSize": "3rem",
+                        "marginBottom": "1rem",
+                        "color": "#4a6cf7"
+                      },
+                      "content": "🎨"
+                    },
+                    {
+                      "type": "h3",
+                      "content": "Diseño Web",
+                      "style": {
+                        "marginBottom": "1rem",
+                        "fontSize": "1.5rem"
+                      }
+                    },
+                    {
+                      "type": "p",
+                      "content": "Creamos diseños atractivos y funcionales que representan la esencia de tu marca y cautivan a tu audiencia.",
+                      "style": {
+                        "color": "#666",
+                        "lineHeight": "1.6"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "className": "service-card",
+                  "style": {
+                    "textAlign": "center",
+                    "padding": "2rem",
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    "transition": "transform 0.3s ease"
+                  },
+                  "children": [
+                    {
+                      "type": "div",
+                      "className": "service-icon",
+                      "style": {
+                        "fontSize": "3rem",
+                        "marginBottom": "1rem",
+                        "color": "#4a6cf7"
+                      },
+                      "content": "💻"
+                    },
+                    {
+                      "type": "h3",
+                      "content": "Desarrollo Web",
+                      "style": {
+                        "marginBottom": "1rem",
+                        "fontSize": "1.5rem"
+                      }
+                    },
+                    {
+                      "type": "p",
+                      "content": "Desarrollamos sitios web rápidos, seguros y optimizados que ofrecen una experiencia excepcional a tus usuarios.",
+                      "style": {
+                        "color": "#666",
+                        "lineHeight": "1.6"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "className": "service-card",
+                  "style": {
+                    "textAlign": "center",
+                    "padding": "2rem",
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    "transition": "transform 0.3s ease"
+                  },
+                  "children": [
+                    {
+                      "type": "div",
+                      "className": "service-icon",
+                      "style": {
+                        "fontSize": "3rem",
+                        "marginBottom": "1rem",
+                        "color": "#4a6cf7"
+                      },
+                      "content": "📱"
+                    },
+                    {
+                      "type": "h3",
+                      "content": "Diseño Responsivo",
+                      "style": {
+                        "marginBottom": "1rem",
+                        "fontSize": "1.5rem"
+                      }
+                    },
+                    {
+                      "type": "p",
+                      "content": "Aseguramos que tu sitio web se vea y funcione perfectamente en todos los dispositivos, desde móviles hasta escritorios.",
+                      "style": {
+                        "color": "#666",
+                        "lineHeight": "1.6"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

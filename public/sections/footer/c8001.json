@@ -1,0 +1,303 @@
+{
+  "id": "c8001",
+  "type": "footer",
+  "content": [
+    {
+      "type": "footer",
+      "className": "site-footer",
+      "style": {
+        "backgroundColor": "#222831",
+        "color": "#eeeeee",
+        "padding": "4rem 2rem 2rem"
+      },
+      "children": [
+        {
+          "type": "div",
+          "className": "footer-container",
+          "style": {
+            "maxWidth": "1200px",
+            "margin": "0 auto",
+            "display": "grid",
+            "gridTemplateColumns": "repeat(auto-fit, minmax(250px, 1fr))",
+            "gap": "2rem"
+          },
+          "children": [
+            {
+              "type": "div",
+              "className": "footer-column",
+              "children": [
+                {
+                  "type": "h3",
+                  "className": "footer-title",
+                  "content": "Sobre Nosotros",
+                  "style": {
+                    "fontSize": "1.5rem",
+                    "marginBottom": "1.5rem",
+                    "color": "#00adb5"
+                  }
+                },
+                {
+                  "type": "p",
+                  "content": "Somos una agencia creativa dedicada a transformar ideas en experiencias digitales memorables. Nuestro equipo de expertos está comprometido con la excelencia y la innovación.",
+                  "style": {
+                    "lineHeight": "1.6",
+                    "marginBottom": "1rem"
+                  }
+                },
+                {
+                  "type": "div",
+                  "className": "social-icons",
+                  "style": {
+                    "display": "flex",
+                    "gap": "1rem",
+                    "marginTop": "1.5rem"
+                  },
+                  "children": [
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "📱",
+                      "style": {
+                        "fontSize": "1.5rem",
+                        "color": "#00adb5",
+                        "textDecoration": "none"
+                      }
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "💻",
+                      "style": {
+                        "fontSize": "1.5rem",
+                        "color": "#00adb5",
+                        "textDecoration": "none"
+                      }
+                    },
+                    {
+                      "type": "a",
+                      "href": "#",
+                      "content": "📧",
+                      "style": {
+                        "fontSize": "1.5rem",
+                        "color": "#00adb5",
+                        "textDecoration": "none"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "className": "footer-column",
+              "children": [
+                {
+                  "type": "h3",
+                  "className": "footer-title",
+                  "content": "Enlaces Rápidos",
+                  "style": {
+                    "fontSize": "1.5rem",
+                    "marginBottom": "1.5rem",
+                    "color": "#00adb5"
+                  }
+                },
+                {
+                  "type": "ul",
+                  "style": {
+                    "listStyle": "none",
+                    "padding": 0,
+                    "margin": 0
+                  },
+                  "children": [
+                    {
+                      "type": "li",
+                      "style": {
+                        "marginBottom": "0.75rem"
+                      },
+                      "children": [
+                        {
+                          "type": "a",
+                          "href": "#",
+                          "content": "Inicio",
+                          "style": {
+                            "color": "#eeeeee",
+                            "textDecoration": "none",
+                            "transition": "color 0.3s ease"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "li",
+                      "style": {
+                        "marginBottom": "0.75rem"
+                      },
+                      "children": [
+                        {
+                          "type": "a",
+                          "href": "#",
+                          "content": "Servicios",
+                          "style": {
+                            "color": "#eeeeee",
+                            "textDecoration": "none",
+                            "transition": "color 0.3s ease"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "li",
+                      "style": {
+                        "marginBottom": "0.75rem"
+                      },
+                      "children": [
+                        {
+                          "type": "a",
+                          "href": "#",
+                          "content": "Proyectos",
+                          "style": {
+                            "color": "#eeeeee",
+                            "textDecoration": "none",
+                            "transition": "color 0.3s ease"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "li",
+                      "style": {
+                        "marginBottom": "0.75rem"
+                      },
+                      "children": [
+                        {
+                          "type": "a",
+                          "href": "#",
+                          "content": "Contacto",
+                          "style": {
+                            "color": "#eeeeee",
+                            "textDecoration": "none",
+                            "transition": "color 0.3s ease"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "className": "footer-column",
+              "children": [
+                {
+                  "type": "h3",
+                  "className": "footer-title",
+                  "content": "Contacto",
+                  "style": {
+                    "fontSize": "1.5rem",
+                    "marginBottom": "1.5rem",
+                    "color": "#00adb5"
+                  }
+                },
+                {
+                  "type": "p",
+                  "content": "📍 Calle Principal 123, Ciudad",
+                  "style": {
+                    "marginBottom": "0.75rem"
+                  }
+                },
+                {
+                  "type": "p",
+                  "content": "📞 +123 456 7890",
+                  "style": {
+                    "marginBottom": "0.75rem"
+                  }
+                },
+                {
+                  "type": "p",
+                  "content": "📧 info@tuagencia.com",
+                  "style": {
+                    "marginBottom": "0.75rem"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "className": "footer-column",
+              "children": [
+                {
+                  "type": "h3",
+                  "className": "footer-title",
+                  "content": "Newsletter",
+                  "style": {
+                    "fontSize": "1.5rem",
+                    "marginBottom": "1.5rem",
+                    "color": "#00adb5"
+                  }
+                },
+                {
+                  "type": "p",
+                  "content": "Suscríbete para recibir nuestras últimas noticias y ofertas.",
+                  "style": {
+                    "marginBottom": "1.5rem"
+                  }
+                },
+                {
+                  "type": "div",
+                  "className": "newsletter-form",
+                  "style": {
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "type": "input",
+                      "placeholder": "Tu email",
+                      "style": {
+                        "padding": "0.75rem",
+                        "borderRadius": "4px 0 0 4px",
+                        "border": "none",
+                        "flex": "1"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "content": "Enviar",
+                      "style": {
+                        "backgroundColor": "#00adb5",
+                        "color": "#ffffff",
+                        "border": "none",
+                        "padding": "0.75rem 1rem",
+                        "borderRadius": "0 4px 4px 0",
+                        "cursor": "pointer"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "className": "footer-bottom",
+          "style": {
+            "borderTop": "1px solid #393e46",
+            "marginTop": "3rem",
+            "paddingTop": "1.5rem",
+            "textAlign": "center"
+          },
+          "children": [
+            {
+              "type": "p",
+              "content": "© 2025 Tu Agencia Creativa. Todos los derechos reservados.",
+              "style": {
+                "color": "#aaaaaa"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

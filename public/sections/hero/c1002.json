@@ -1,0 +1,155 @@
+{
+  "id": "c1002",
+  "type": "hero",
+  "content": [
+    {
+      "type": "section",
+      "className": "hero-video-section",
+      "style": {
+        "position": "relative",
+        "minHeight": "100vh",
+        "overflow": "hidden",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "color": "#ffffff"
+      },
+      "children": [
+        {
+          "type": "div",
+          "className": "video-background",
+          "style": {
+            "position": "absolute",
+            "top": 0,
+            "left": 0,
+            "width": "100%",
+            "height": "100%",
+            "zIndex": -1,
+            "backgroundColor": "#000000"
+          },
+          "children": [
+            {
+              "type": "video",
+              "autoPlay": true,
+              "muted": true,
+              "loop": true,
+              "style": {
+                "width": "100%",
+                "height": "100%",
+                "objectFit": "cover",
+                "opacity": 0.7
+              },
+              "children": [
+                {
+                  "type": "source",
+                  "src": "https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4",
+                  "type": "video/mp4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "className": "hero-content",
+          "style": {
+            "maxWidth": "900px",
+            "padding": "2rem",
+            "textAlign": "center",
+            "zIndex": 1
+          },
+          "children": [
+            {
+              "type": "h1",
+              "content": "Creamos Experiencias Digitales Memorables",
+              "style": {
+                "fontSize": "3.5rem",
+                "fontWeight": "bold",
+                "marginBottom": "1.5rem",
+                "textShadow": "2px 2px 4px rgba(0, 0, 0, 0.5)"
+              }
+            },
+            {
+              "type": "p",
+              "content": "Somos una agencia creativa especializada en transformar ideas en soluciones digitales innovadoras que conectan con tu audiencia y potencian tu negocio.",
+              "style": {
+                "fontSize": "1.25rem",
+                "marginBottom": "2.5rem",
+                "maxWidth": "800px",
+                "margin": "0 auto 2.5rem",
+                "lineHeight": 1.6,
+                "textShadow": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+              }
+            },
+            {
+              "type": "div",
+              "className": "hero-buttons",
+              "style": {
+                "display": "flex",
+                "justifyContent": "center",
+                "gap": "1rem",
+                "flexWrap": "wrap"
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "content": "Nuestros Servicios",
+                  "style": {
+                    "backgroundColor": "#ff6b6b",
+                    "color": "white",
+                    "border": "none",
+                    "padding": "0.75rem 1.5rem",
+                    "fontSize": "1rem",
+                    "borderRadius": "4px",
+                    "cursor": "pointer",
+                    "fontWeight": "bold",
+                    "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    "transition": "transform 0.3s, box-shadow 0.3s"
+                  }
+                },
+                {
+                  "type": "button",
+                  "content": "Contáctanos",
+                  "style": {
+                    "backgroundColor": "transparent",
+                    "color": "white",
+                    "border": "2px solid white",
+                    "padding": "0.75rem 1.5rem",
+                    "fontSize": "1rem",
+                    "borderRadius": "4px",
+                    "cursor": "pointer",
+                    "fontWeight": "bold",
+                    "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    "transition": "background-color 0.3s, color 0.3s"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "className": "scroll-indicator",
+          "style": {
+            "position": "absolute",
+            "bottom": "2rem",
+            "left": "50%",
+            "transform": "translateX(-50%)",
+            "textAlign": "center",
+            "animation": "bounce 2s infinite"
+          },
+          "children": [
+            {
+              "type": "span",
+              "content": "↓",
+              "style": {
+                "fontSize": "2rem",
+                "color": "white"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
