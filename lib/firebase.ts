@@ -1,14 +1,11 @@
 // Interfaz para los metadatos de secciones
 export interface SectionMetadata {
   id: string;
-  title: string;
   category: string;
-  tags: string[];
+  title: string;
   description: string;
-  thumbnailUrl?: string;
-  jsonPath?: string;
+  tags: string[];
   imagePath: string;
-  thumbnailPath?: string;
 }
 
 /**

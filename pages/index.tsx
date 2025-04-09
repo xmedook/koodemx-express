@@ -32,17 +32,6 @@ export default function Home() {
   const [categorySections, setCategorySections] = useState<SectionMetadata[]>([]);
   const [isLoadingCategory, setIsLoadingCategory] = useState<boolean>(false);
 
-  // Mapa de categorías a IDs iniciales para thumbnails existentes
-  const CATEGORY_ID_MAP: Record<string, number> = {
-    "404 page": 2391,
-    "blog carousel": 1932,
-    "blog grid": 2100, // Valor ficticio, ajustar según los archivos reales
-    "call to action": 2200, // Valor ficticio, ajustar según los archivos reales
-    "hero": 2300, // Valor ficticio, ajustar según los archivos reales
-    "footer": 2400, // Valor ficticio, ajustar según los archivos reales
-    // Añadir más categorías según sea necesario
-  };
-
   // Cargar secciones de una categoría específica
   const loadCategorySections = async (category: string) => {
     console.log('Cargando secciones para categoría:', category);
@@ -53,50 +42,25 @@ export default function Home() {
       const normalizedCategory = category.replace(/ /g, '-').toLowerCase();
       console.log('Categoría normalizada:', normalizedCategory);
       
-      // Crear secciones para esta categoría
-      const sections: SectionMetadata[] = [];
+      // Cargar datos de sections-index.json
+      const response = await fetch('/api/sections?category=' + encodeURIComponent(category));
+      const data = await response.json();
       
-      // Obtener el ID inicial para esta categoría o usar un valor predeterminado
-      const startId = CATEGORY_ID_MAP[category] || 2000;
-      
-      // Generar IDs basados en la categoría para simular secciones reales
-      // En una implementación real, esto cargaría desde una API o base de datos
-      for (let i = 0; i < 10; i++) {
-        // Usar un ID que coincida con los thumbnails existentes
-        const id = `c${startId + (i * 2)}`; // Incrementar de 2 en 2 para coincidir con el patrón observado
-        
-        // Normalizar el nombre de la categoría para la ruta de archivo
-        const normalizedCategory = category.replace(/ /g, '-').toLowerCase();
-        
-        sections.push({
-          id,
-          title: `${category.charAt(0).toUpperCase() + category.slice(1)} ${i + 1}`,
-          category,
-          tags: [category],
-          description: `Sección de ${category}`,
-          // Usar rutas de imágenes basadas en los IDs generados
-          imagePath: `/sections/${normalizedCategory}/${id}.png`,
-          thumbnailPath: `/thumbnails/${normalizedCategory}-${id}.webp`
-        });
+      if (!data.success) {
+        throw new Error(data.error || 'Error al cargar las secciones');
       }
       
-      console.log('Secciones generadas:', sections.length);
-      console.log('Primera sección:', sections[0]);
-      setCategorySections(sections);
-    } catch (err) {
-      console.error('Error al cargar secciones de categoría:', err);
+      setCategorySections(data.sections || []);
+    } catch (error) {
+      console.error('Error al cargar secciones:', error);
+      setCategorySections([]);
+      setError('Error al cargar las secciones');
     } finally {
       setIsLoadingCategory(false);
     }
   };
 
-  // Manejar clic en categoría
-  const handleCategoryClick = (category: string) => {
-    console.log('Categoría seleccionada:', category);
-    setSelectedCategory(category);
-    loadCategorySections(category);
-  };
-
+  // Manejar envío del formulario
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -128,8 +92,7 @@ export default function Home() {
       // Si hay sugerencias, seleccionar la primera categoría
       if (data.suggestions && data.suggestions.length > 0) {
         const firstCategory = data.suggestions[0].category;
-        setSelectedCategory(firstCategory);
-        loadCategorySections(firstCategory);
+        handleCategoryClick(firstCategory);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error desconocido');
@@ -218,7 +181,6 @@ export default function Home() {
             {suggestions.length > 0 && (
               <div className={styles.results}>
                 <h2>Secciones Recomendadas</h2>
-                
                 <div className={styles.suggestionsGrid}>
                   {suggestions.map((suggestion) => (
                     <div key={suggestion.id} className={styles.card}>
@@ -236,7 +198,7 @@ export default function Home() {
               </div>
             )}
 
-            {selectedCategory ? (
+            {selectedCategory && (
               <div className={styles.results}>
                 <h2>Secciones de {selectedCategory}</h2>
                 
@@ -250,32 +212,27 @@ export default function Home() {
                         className={`${styles.sectionItem} ${selectedSections.some(s => s.id === section.id) ? styles.sectionItemAdded : ''}`}
                         onClick={() => !selectedSections.some(s => s.id === section.id) && handleAddSection(section)}
                       >
+                        <div className={styles.imageContainer}>
+                          <Image 
+                            src={section.imagePath}
+                            alt={section.title}
+                            width={300}
+                            height={200}
+                            className={styles.sectionImage}
+                            priority={false}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                              target.nextElementSibling?.classList.remove(styles.hidden);
+                            }}
+                          />
+                          <div className={`${styles.placeholderImage} ${styles.hidden}`}>
+                            {section.category}
+                          </div>
+                        </div>
                         <div className={styles.sectionInfo}>
-                          <h3>{section.title} <span className={styles.sectionCode}>({section.id})</span></h3>
-                          {section.thumbnailPath ? (
-                            <div className={styles.imageContainer}>
-                              <Image 
-                                src={section.thumbnailPath}
-                                alt={section.title}
-                                width={300}
-                                height={200}
-                                className={styles.sectionImage}
-                                onError={(e) => {
-                                  // Si hay un error al cargar la imagen, mostrar el placeholder
-                                  const target = e.target as HTMLImageElement;
-                                  target.style.display = 'none';
-                                  target.nextElementSibling?.classList.remove(styles.hidden);
-                                }}
-                              />
-                              <div className={`${styles.placeholderImage} ${styles.hidden}`}>
-                                {section.category}
-                              </div>
-                            </div>
-                          ) : (
-                            <div className={styles.placeholderImage}>
-                              {section.category}
-                            </div>
-                          )}
+                          <h3>{section.title}</h3>
+                          <p>{section.description}</p>
                         </div>
                       </div>
                     ))}
@@ -286,20 +243,23 @@ export default function Home() {
                   </div>
                 )}
               </div>
-            ) : (
-              <div className={styles.selectCategory}>
-                Selecciona una categoría para ver las secciones disponibles
-              </div>
             )}
           </div>
           
           {/* Columna del canvas */}
           <div className={styles.canvasColumn}>
-            <Canvas 
-              selectedSections={selectedSections}
-              onRemoveSection={handleRemoveSection}
-              onReorderSections={handleReorderSections}
-            />
+            <h2>Canvas</h2>
+            {selectedSections.length > 0 ? (
+              <Canvas 
+                sections={selectedSections}
+                onRemoveSection={handleRemoveSection}
+                onReorderSections={handleReorderSections}
+              />
+            ) : (
+              <div className={styles.emptyCanvas}>
+                Selecciona secciones para agregar al canvas
+              </div>
+            )}
           </div>
         </div>
       </main>
@@ -309,4 +269,10 @@ export default function Home() {
       </footer>
     </div>
   );
+}
+    loadCategorySections(category);
+  };
+
+  // Manejar envío del formulario
+  const handleSubmit = async (e: React.
 }

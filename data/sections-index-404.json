@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-04-08",
+  "sections": [
+    {
+      "id": "c2391",
+      "category": "404-page",
+      "title": "404 Error Page Clean",
+      "description": "A clean and minimalist 404 error page design",
+      "tags": ["404", "error-page", "minimal"],
+      "imagePath": "/sections/404-page/c2391.png"
+    },
+    {
+      "id": "c2393",
+      "category": "404-page",
+      "title": "404 Error Page Illustration",
+      "description": "404 page with custom illustration",
+      "tags": ["404", "error-page", "illustration"],
+      "imagePath": "/sections/404-page/c2393.png"
+    },
+    {
+      "id": "c2395",
+      "category": "404-page",
+      "title": "404 Error Page Interactive",
+      "description": "Interactive 404 page with animation",
+      "tags": ["404", "error-page", "interactive"],
+      "imagePath": "/sections/404-page/c2395.png"
+    },
+    {
+      "id": "c2397",
+      "category": "404-page",
+      "title": "404 Error Page Modern",
+      "description": "Modern design 404 error page with geometric elements",
+      "tags": ["404", "error-page", "modern"],
+      "imagePath": "/sections/404-page/c2397.png"
+    },
+    {
+      "id": "c2399",
+      "category": "404-page",
+      "title": "404 Error Page Simple",
+      "description": "Simple and effective 404 error page",
+      "tags": ["404", "error-page", "simple"],
+      "imagePath": "/sections/404-page/c2399.png"
+    }
+  ]
+}
+
